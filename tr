@@ -1,0 +1,184 @@
+  <!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action Digital | Dijital Ajans</title>
+    <style>
+        /* Tasarım Ayarları (Siyah ve Beyaz Tema) */
+        body { 
+            margin: 0; 
+            font-family: 'Helvetica Neue', Arial, sans-serif; 
+            background-color: #000000; 
+            color: #ffffff; 
+        }
+        a { text-decoration: none; color: #ffffff; }
+        
+        /* Üst Menü */
+        header { 
+            padding: 25px 10%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            border-bottom: 1px solid #222; 
+        }
+        .logo { 
+            font-size: 26px; 
+            font-weight: 900; 
+            letter-spacing: 2px; 
+        }
+        .nav-link {
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+        .nav-link:hover { color: #888; }
+
+        /* Ana Karşılama Alanı */
+        .hero { 
+            text-align: center; 
+            padding: 120px 20px; 
+        }
+        .hero h1 { 
+            font-size: 56px; 
+            margin-bottom: 20px; 
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+        .hero p { 
+            font-size: 18px; 
+            color: #aaaaaa; 
+            max-width: 600px; 
+            margin: 0 auto 50px auto; 
+            line-height: 1.6; 
+        }
+        
+        /* Butonlar */
+        .btn { 
+            background: #ffffff; 
+            color: #000000; 
+            padding: 16px 36px; 
+            font-size: 16px;
+            font-weight: bold; 
+            border-radius: 4px; 
+            transition: all 0.3s; 
+            display: inline-block;
+        }
+        .btn:hover { 
+            background: #cccccc; 
+            transform: translateY(-2px);
+        }
+        .btn-outline { 
+            background: transparent; 
+            color: #ffffff; 
+            border: 2px solid #ffffff; 
+            padding: 14px 34px; 
+            font-size: 16px;
+            font-weight: bold; 
+            border-radius: 4px; 
+            transition: all 0.3s; 
+            margin-left: 15px; 
+            display: inline-block;
+        }
+        .btn-outline:hover { 
+            background: #ffffff; 
+            color: #000000; 
+        }
+
+        /* Hizmetler Alanı */
+        .services { 
+            display: flex; 
+            justify-content: center; 
+            gap: 30px; 
+            padding: 100px 10%; 
+            flex-wrap: wrap; 
+            background-color: #050505; 
+        }
+        .service-card { 
+            background: #0a0a0a; 
+            padding: 40px; 
+            border: 1px solid #222; 
+            width: 300px; 
+            text-align: left; 
+            transition: transform 0.3s, border-color 0.3s; 
+        }
+        .service-card:hover { 
+            transform: translateY(-10px); 
+            border-color: #ffffff; 
+        }
+        .service-card h3 { 
+            font-size: 24px; 
+            margin-bottom: 20px; 
+        }
+        .service-card p { 
+            color: #888888; 
+            font-size: 16px; 
+            line-height: 1.6; 
+        }
+
+        /* İletişim Alanı */
+        .contact { 
+            text-align: center; 
+            padding: 100px 20px; 
+            border-top: 1px solid #222; 
+        }
+        .contact h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        /* Alt Bilgi */
+        footer { 
+            text-align: center; 
+            padding: 30px; 
+            border-top: 1px solid #222; 
+            font-size: 14px; 
+            color: #555; 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">ACTION DIGITAL</div>
+        <nav>
+            <a href="https://www.instagram.com/actiondigital.tr/" target="_blank" class="nav-link">Instagram</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Dijitalde Harekete Geçin.</h1>
+        <p>Markanızı büyütmek için buradayız. Siyah beyazın netliği ile sadece performansa, sonuca ve başarıya odaklanıyoruz.</p>
+        <a href="#hizmetler" class="btn">Neler Yapıyoruz?</a>
+        <a href="https://www.instagram.com/actiondigital.tr/" target="_blank" class="btn-outline">Bize Katılın</a>
+    </section>
+
+    <section id="hizmetler" class="services">
+        <div class="service-card">
+            <h3>Reklam Yönetimi</h3>
+            <p>Doğru hedef kitleye, doğru bütçeyle ulaşın. Veri odaklı reklam stratejilerimizle maksimum dönüşüm sağlıyoruz.</p>
+        </div>
+        <div class="service-card">
+            <h3>Sosyal Medya Yönetimi</h3>
+            <p>Markanızın dijital vitrinini profesyonelce tasarlıyor, güçlü içeriklerle takipçi bağlılığını artırıyoruz.</p>
+        </div>
+        <div class="service-card">
+            <h3>Web Hizmetleri</h3>
+            <p>Modern, hızlı ve mobil uyumlu çözümlerle müşterilerinizin size dijital dünyada kusursuz ulaşmasını sağlıyoruz.</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Projeleriniz İçin Hazırız</h2>
+        <p style="color: #aaaaaa; margin-bottom: 40px;">Bizimle iletişime geçin ve markanızın dijitaldeki potansiyelini birlikte keşfedelim.</p>
+        <!-- Instagram linkinize yönlendiren buton -->
+        <a href="https://www.instagram.com/actiondigital.tr/" target="_blank" class="btn">Instagram'dan Mesaj Atın</a>
+    </section>
+
+    <footer>
+        &copy; 2026 Action Digital. Tüm hakları saklıdır.
+    </footer>
+
+</body>
+</html>
